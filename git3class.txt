@@ -1,0 +1,109 @@
+
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/ec2-user/demo/myrepo/.git/
+================
+git configuration files:
+_____________________
+
+\.git/config
+___________
+
+  > its a repository specific configuration settings file
+> is a file level configuration settings
+$ git config --local user.name "koushik"
+ the Above command should execute at .git directory 
+                 
+~/.gitconfig
+
+> --global level configuration settings  file
+$git config ---global user.name "hello"
+above configuration parameters are saved in .gitconfig file from the home directory of the user
+ 
+
+/etc/.gitconfig:
+_________________
+
+is system-level configuration settings file
+$ sudo git config  --system user.name "shetty"
+
+
+======================================================
+git
+git help --all
+
+files and directories inside the .git:
+_____________________________
+
+
+branches
+config
+description
+HEAD --refs/heads/master
+hooks
+   applypatch-msg.sample      pre-applypatch.sample      pre-push.sample          update.sample
+commit-msg.sample          pre-commit.sample          pre-rebase.sample
+fsmonitor-watchman.sample  pre-merge-commit.sample    pre-receive.sample
+post-update.sample         prepare-commit-msg.sample  push-to-checkout.sample
+===================================================================
+
+
+
+applypatch-msg.sample      pre-applypatch.sample      pre-push.sample          update.sample
+commit-msg.sample          pre-commit.sample          pre-rebase.sample
+fsmonitor-watchman.sample  pre-merge-commit.sample    pre-receive.sample
+post-update.sample         prepare-commit-msg.sample  push-to-checkout.sample
+
+
+==============================================
+info
+   exclude 
+objects
+    info
+   pack
+refs:
+    heads  tags
+      
+
+
+AFTER COMMITING THE FILES, GIT UPDATES THE FOLLWOING FILES AND DIRTECTORIES:
+___________________________________________________________________
+
+branches 
+ COMMIT_EDITMSG  
+config  
+description
+  HEAD  
+hooks  
+index
+  info 
+ logs
+  objects
+  refs
+===============================================================================
+
+git init
+git add
+git commit
+git log
+git diff 
+git status
+git branch 
+git checkout
+git switch
+git merge
+git shortlog
+git config
+git restore
+git ls-files
+git mv oldfile newfile
+git rm filename
+
